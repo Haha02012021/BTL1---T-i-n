@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.Controller">
+   <children>
+      <BorderPane layoutX="74.0" layoutY="82.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <right>
+            <HBox prefHeight="100.0" prefWidth="80.0" BorderPane.alignment="CENTER">
+               <children>
+                  <VBox fx:id="functionVBox" alignment="CENTER" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: BEE0FF;">
+                     <children>
+                        <Pane prefHeight="50.0" prefWidth="100.0" />
+                        <Button mnemonicParsing="false" onAction="#engVietButton" prefHeight="35.0" prefWidth="60.0" style="-fx-background-color: white;" text="E-V" textFill="#717171">
+                           <font>
+                              <Font name="Cambria" size="16.0" />
+                           </font>
+                        </Button>
+                        <Pane prefHeight="35.0" prefWidth="100.0" />
+                        <Button mnemonicParsing="false" onAction="#vietEngButton" prefHeight="35.0" prefWidth="60.0" style="-fx-background-color: white;" text="V-E" textFill="#717171">
+                           <font>
+                              <Font name="Cambria" size="16.0" />
+                           </font>
+                        </Button>
+                        <Pane prefHeight="35.0" prefWidth="200.0" />
+                        <Button mnemonicParsing="false" onAction="#moreButton" prefHeight="35.0" prefWidth="60.0" style="-fx-background-color: white;" text="More" textFill="#717171">
+                           <font>
+                              <Font name="Cambria" size="16.0" />
+                           </font>
+                        </Button>
+                        <Pane prefHeight="310.0" prefWidth="100.0" style="-fx-region-border: left;" />
+                        <Button mnemonicParsing="false" onAction="#colorButton" prefHeight="35.0" prefWidth="60.0" style="-fx-background-color: white;" text="Color" textFill="#717171">
+                           <font>
+                              <Font name="Cambria" size="16.0" />
+                           </font>
+                        </Button>
+                        <Pane prefHeight="30.0" prefWidth="100.0" />
+                        <Button defaultButton="true" mnemonicParsing="false" onAction="#savedButton" prefHeight="35.0" prefWidth="61.0" style="-fx-background-color: white;" text="Saved" textFill="#717171">
+                           <font>
+                              <Font name="Cambria" size="16.0" />
+                           </font>
+                        </Button>
+                        <Pane prefHeight="51.0" prefWidth="100.0" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </right>
+         <left>
+            <VBox fx:id="searchVBox" alignment="CENTER" prefHeight="200.0" prefWidth="300.0" style="-fx-background-color: BEE0FF;" BorderPane.alignment="CENTER">
+               <children>
+                  <Pane prefHeight="6.0" prefWidth="250.0" />
+                  <Button mnemonicParsing="false" onAction="#searchButton" style="-fx-background-color: white;" text="Tìm ngay">
+                     <font>
+                        <Font name="Cambria" size="16.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="20.0" />
+                     </VBox.margin>
+                  </Button>
+                  <TextField fx:id="typeSearch" prefHeight="40.0" promptText="Nhập từ vào đây..." style="-fx-background-color: white;">
+                     <font>
+                        <Font name="Cambria" size="16.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <VBox fx:id="vBox" prefHeight="505.0" prefWidth="250.0" style="-fx-border-style: hidden;" />
+               </children>
+            </VBox>
+         </left>
+         <center>
+            <VBox prefHeight="200.0" prefWidth="100.0" style="-fx-border-color: white;" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox fx:id="titleHBox" prefHeight="105.0" prefWidth="200.0" style="-fx-background-color: BEE0FF;">
+                     <children>
+                        <BorderPane prefHeight="102.0" prefWidth="329.0">
+                           <center>
+                              <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                                 <children>
+                                    <VBox alignment="CENTER" prefHeight="102.0" prefWidth="345.0">
+                                       <children>
+                                          <HBox alignment="TOP_RIGHT" prefHeight="74.0" prefWidth="328.0">
+                                             <children>
+                                                <Label fx:id="englishWord" alignment="CENTER_RIGHT" contentDisplay="CENTER" prefHeight="74.0" prefWidth="236.0" text="English" textFill="WHITE" textOverrun="CENTER_WORD_ELLIPSIS">
+                                                   <font>
+                                                      <Font name="Cambria" size="30.0" />
+                                                   </font>
+                                                </Label>
+                                                <VBox alignment="BOTTOM_LEFT" prefHeight="74.0" prefWidth="155.0">
+                                                   <children>
+                                                      <Text fx:id="pronunLabel" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="/'iηgli∫/" wrappingWidth="155.0">
+                                                         <font>
+                                                            <Font name="Cambria" size="16.0" />
+                                                         </font>
+                                                      </Text>
+                                                   </children>
+                                                </VBox>
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                           </center>
+                        </BorderPane>
+                        <Pane fx:id="volumnPane" prefHeight="102.0" prefWidth="121.0">
+                           <children>
+                              <Button layoutX="19.0" layoutY="20.0" mnemonicParsing="false" style="-fx-background-color: transparent;" text="UK" textFill="WHITE">
+                                 <font>
+                                    <Font name="Cambria" size="16.0" />
+                                 </font>
+                              </Button>
+                              <Button layoutX="20.0" layoutY="57.0" mnemonicParsing="false" style="-fx-background-color: transparent;" text="US" textFill="#fcf9f9">
+                                 <font>
+                                    <Font name="Cambria Bold" size="16.0" />
+                                 </font>
+                              </Button>
+                              <ImageView blendMode="ADD" fitHeight="25.0" fitWidth="30.0" layoutX="55.0" layoutY="23.0" onMouseClicked="#ukSpeak" pickOnBounds="true">
+                                 <image>
+                                    <Image url="@download.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView blendMode="ADD" fitHeight="25.0" fitWidth="30.0" layoutX="55.0" layoutY="60.0" onMouseClicked="#usSpeak" pickOnBounds="true">
+                                 <image>
+                                    <Image url="@download.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </Pane>
+                     </children>
+                  </HBox>
+                  <ScrollPane fx:id="meaningBox" fitToHeight="true" hbarPolicy="NEVER" prefHeight="500.0" prefWidth="450.0" style="-fx-background-color: white;" />
+               </children>
+            </VBox>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>
