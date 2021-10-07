@@ -1,13 +1,18 @@
 package app;
 
+import controller.MainController;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.layout.Pane;
 import javafx.scene.layout.StackPane;
 import javafx.scene.media.AudioClip;
 import javafx.stage.Stage;
+import com.sun.speech.freetts.*;
+import com.sun.speech.freetts.VoiceManager;
+import com.sun.speech.freetts.Voice;
 
 public class Main extends Application {
 
@@ -18,42 +23,28 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) {
         try {
-            FXMLLoader root = new FXMLLoader(getClass().getResource("Controller.fxml"));
+            FXMLLoader root = new FXMLLoader(getClass().getResource("../views/MainController.fxml"));
             Parent r = root.load();
             primaryStage.setTitle("HIHA");
             Scene scene = new Scene(r);
 
-            String path = "https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/t/t_o/t_oth/t_other_1_gb_1.mp3";
-            AudioClip audioClip = new AudioClip(path);
-
-            Button button = new Button("Phát");
-            button.setOnAction(event -> {
-                audioClip.play();
-            });
-            String s = "t-other";
-            if (s.contains(" ")) s = s.replace(" ", "_");
-            if (s.contains("-")) s = s.replace("-", "_");
-            if (s.contains("'")) s = s.replace("'", "_");
-            String[] resArr = new String[s.length()];
-            resArr[0] = String.valueOf(s.charAt(0));
-            int index = 1;
-            for (int i = 1; i < s.length(); i+=2) {
-                resArr[index] = resArr[index-1] + s.charAt(i) + s.charAt(i+1);
-                index++;
-            }
-            String res = "";
-            for (String s1: resArr) {
-                if (s1 != null) res += ("/" + s1);
-            }
-            System.out.println(res);
-            String pathAudioUK = "https://www.oxfordlearnersdictionaries.com/media/english/uk_pron%s_1_gb_1.mp3";
-            String pathAudioUK1 = pathAudioUK;
-            pathAudioUK1 = pathAudioUK1.replace("%s", res);
-            System.out.println(pathAudioUK1);
+            Button button = new Button("Click");
             StackPane stackPane = new StackPane();
             stackPane.getChildren().add(button);
             Scene scene1 = new Scene(stackPane, 300, 300);
 
+            button.setOnAction(e -> {
+                System.setProperty("freetts.voices", "com.sun.speech.freetts.en.us.cmu_us_kal.KevinVoiceDirectory");
+                VoiceManager voiceManager = VoiceManager.getInstance();
+                Voice voice = voiceManager.getVoice("kevin16");
+                voice.allocate();
+                voice.speak("please speak something");
+        
+            });
+
+            //,cmudict04,freetts-jsapi10
+
+            scene.getStylesheets().add(getClass().getResource("../css/listView.css").toExternalForm());
             primaryStage.setScene(scene);
             primaryStage.show();
         }

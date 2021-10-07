@@ -7,7 +7,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class Dictionary {
-    private ArrayList<Word> dict = new ArrayList<>(109000);
+    public ArrayList<Word> dict = new ArrayList<>(109000);
 
     public Dictionary(String language) {
         try {

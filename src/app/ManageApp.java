@@ -8,12 +8,12 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class ManageApp {
-    public static Word findWord(ArrayList<Word> wordArr, String word) {
+    public static int findWord(ArrayList<Word> wordArr, String word) {
         word = word.trim().toLowerCase(Locale.ROOT);
-        for (Word w: wordArr) {
-            if (word.equals(w.getEnglish())) return w;
+        for (int i = 0; i < wordArr.size(); i++) {
+            if (word.equals(wordArr.get(i).getEnglish())) return i;
         }
-        return null;
+        return -1;
     }
 
     public static ArrayList<Word> sameWord(ArrayList<Word> words, String word) {

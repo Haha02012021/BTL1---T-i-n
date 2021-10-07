@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="840.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainController">
+   <children>
+      <VBox fx:id="functionVBox" alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #084E91;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="780.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Pane maxWidth="40.0" minHeight="40.0" minWidth="40.0" onMouseClicked="#engVietButton" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #0A72C2; -fx-background-radius: 5px;">
+               <VBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </VBox.margin>
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="30.0" layoutX="5.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/open-book.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane maxWidth="40.0" minHeight="40.0" minWidth="40.0" onMouseClicked="#vietEngButton" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #0A72C2; -fx-background-radius: 5px;">
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="30.0" layoutX="5.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/open-book.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane maxWidth="40.0" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #0A72C2; -fx-background-radius: 5;">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="30.0" layoutX="5.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/history.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane maxWidth="40.0" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #0A72C2; -fx-background-radius: 5;">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="30.0" layoutX="5.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/bookmark.png" />
+                     </image>
+                  </ImageView>
+               </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Pane>
+            <Pane maxWidth="40.0" onMouseClicked="#moreButton" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #0A72C2; -fx-background-radius: 5;">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="30.0" layoutX="5.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/button.png" />
+                     </image>
+                  </ImageView>
+               </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Pane>
+            <Pane maxWidth="40.0" onMouseClicked="#colorButton" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #0A72C2; -fx-background-radius: 5;">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="30.0" layoutX="5.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/paint-roller.png" />
+                     </image>
+                  </ImageView>
+               </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Pane>
+            <Pane prefHeight="245.0" prefWidth="60.0" />
+            <Pane maxWidth="40.0" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #0A72C2; -fx-background-radius: 5;">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="30.0" layoutX="5.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/info-round-button.png" />
+                     </image>
+                  </ImageView>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Pane>
+         </children>
+      </VBox>
+      <HBox fx:id="contentBox" layoutX="462.0" layoutY="132.0" prefHeight="600.0" prefWidth="740.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="60.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+   </children>
+</AnchorPane>

@@ -23,6 +23,10 @@ public class Word {
         return this.meaning;
     }
 
+    public void setMeaning(String meaning) {
+        this.meaning = meaning;
+    }
+
     public void addMeaning(String line) {
         this.meaning += line + "\n";
     }

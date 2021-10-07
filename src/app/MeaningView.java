@@ -64,7 +64,6 @@ public class MeaningView {
 
     static TextFlow exampleMeaningText(String example) {
         Text text = new Text(example);
-        text.setWrappingWidth(200);
         TextFlow textFlow = new TextFlow(text);
         textFlow.setPadding(new Insets(0, 0, 0, 20));
         return textFlow;
@@ -73,7 +72,10 @@ public class MeaningView {
     public VBox meaningVBox() {
         VBox meaning = new VBox();
         meaning.setSpacing(4);
-        meaning.setPrefWidth(450);
+        TextFlow pronun = new TextFlow();
+        if (word.getPronunciation() != null) pronun.getChildren().add(new Text(word.getPronunciation()));
+        meaning.getChildren().add(pronun);
+        pronun.setPadding(new Insets(0, 0, 0, 20));
         Scanner sc = new Scanner(word.getMeaning());
         Pattern example = Pattern.compile("\\=([^\\+]+)\\+ ([^\\r\\n]+)");
         while (sc.hasNext()) {
