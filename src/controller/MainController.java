@@ -9,17 +9,20 @@ import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.HBox;
+import javafx.scene.layout.Priority;
 import javafx.scene.layout.VBox;
 
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.ResourceBundle;
 
+import javax.sound.midi.VoiceStatus;
+
 public class MainController implements Initializable{
     @FXML
     private VBox functionVBox;
     @FXML
-    private HBox contentBox;
+    private HBox allViewBox;
 
 
     private String[] color = {"#0A7BE9", "#064279"};
@@ -30,7 +33,8 @@ public class MainController implements Initializable{
         try {
             FXMLLoader mainTransFxmlLoader = new FXMLLoader(getClass().getResource("../views/MainTrans.fxml"));
             Parent mainTransParent = mainTransFxmlLoader.load();
-            contentBox.getChildren().add(mainTransParent);
+            allViewBox.getChildren().add(mainTransParent);
+            allViewBox.setHgrow(mainTransParent, Priority.ALWAYS);
         } catch (Exception exception) {
             System.out.println(exception.getMessage());
         }
@@ -41,8 +45,9 @@ public class MainController implements Initializable{
         try {
             FXMLLoader mainTransFxmlLoader = new FXMLLoader(getClass().getResource("../views/MainTrans.fxml"));
             Parent mainTransParent = mainTransFxmlLoader.load();
-            contentBox.getChildren().clear();
-            contentBox.getChildren().add(mainTransParent);
+            allViewBox.getChildren().remove(1);
+            allViewBox.getChildren().add(mainTransParent);
+            allViewBox.setHgrow(allViewBox.getChildren().get(1), Priority.ALWAYS);
         } catch (Exception exception) {
             System.out.println(exception.getMessage());
         }
@@ -53,8 +58,9 @@ public class MainController implements Initializable{
         try {
             FXMLLoader mainTransFxmlLoader = new FXMLLoader(getClass().getResource("../views/MainTrans.fxml"));
             Parent mainTransParent = mainTransFxmlLoader.load();
-            contentBox.getChildren().clear();
-            contentBox.getChildren().add(mainTransParent);
+            allViewBox.getChildren().remove(1);
+            allViewBox.getChildren().add(mainTransParent);
+            allViewBox.setHgrow(allViewBox.getChildren().get(1), Priority.ALWAYS);
         } catch (Exception exception) {
             System.out.println(exception.getMessage());
         }
@@ -62,22 +68,40 @@ public class MainController implements Initializable{
 
     public void moreButton(MouseEvent event) {
         try {
-            FXMLLoader ggtransFxmlLoader = new FXMLLoader(getClass().getResource("../views/Ggtrans.fxml"));
-            Parent ggtransParent = ggtransFxmlLoader.load();
-
-            contentBox.getChildren().clear();
-            contentBox.getChildren().add(ggtransParent);
+            FXMLLoader mainTransFxmlLoader = new FXMLLoader(getClass().getResource("../views/Ggtrans.fxml"));
+            Parent mainTransParent = mainTransFxmlLoader.load();
+            allViewBox.getChildren().remove(1);
+            allViewBox.getChildren().add(mainTransParent);
+            allViewBox.setHgrow(allViewBox.getChildren().get(1), Priority.ALWAYS);
         } catch (Exception exception) {
             System.out.println(exception.getMessage());
         }
     }
 
+    public void historyBox(MouseEvent event) {
+        BookmarkController.setDictionary(new Dictionary("history"));
+        try {
+            FXMLLoader mainTransFxmlLoader = new FXMLLoader(getClass().getResource("../views/History.fxml"));
+            Parent mainTransParent = mainTransFxmlLoader.load();
+            allViewBox.getChildren().remove(1);
+            allViewBox.getChildren().add(mainTransParent);
+            allViewBox.setHgrow(allViewBox.getChildren().get(1), Priority.ALWAYS);
+        } catch (Exception exception) {
+            System.out.println(exception.getMessage());
+        }
+    }
 
-
-    public static ArrayList<Word> bookmarkButton(MouseEvent mouseEvent) {
-        ArrayList<Word> bmWords = new ArrayList<>();
-        if(!bmWords.contains(meanedWord)) bmWords.add(meanedWord);
-        return bmWords;
+    public void bookmarkBox(MouseEvent event) {
+        BookmarkController.setDictionary(new Dictionary("bookmark"));
+        try {
+            FXMLLoader mainTransFxmlLoader = new FXMLLoader(getClass().getResource("../views/Bookmark.fxml"));
+            Parent mainTransParent = mainTransFxmlLoader.load();
+            allViewBox.getChildren().remove(1);
+            allViewBox.getChildren().add(mainTransParent);
+            allViewBox.setHgrow(allViewBox.getChildren().get(1), Priority.ALWAYS);
+        } catch (Exception exception) {
+            System.out.println(exception.getMessage());
+        }
     }
 
     public void colorButton(MouseEvent event) {

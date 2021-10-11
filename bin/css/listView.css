@@ -1,0 +1,28 @@
+.list-view .list-cell {
+    -fx-background-color: #064279;
+    -fx-margin: 0;
+    -fx-border-color: #064279;
+}
+
+.list-cell .border-pane::-moz-focus-outer {
+    -fx-background-color: #99CCCCFF;
+}
+
+
+.anchor-pane {
+    -fx-font-family: Roboto;
+}
+
+#meaningBox {
+    -fx-background-color: white;
+}
+
+.list-view .scroll-bar * {
+    -fx-min-width: 0;
+    -fx-pref-width: 0;
+    -fx-max-width: 0;
+
+    -fx-min-height: 0;
+    -fx-pref-height: 0;
+    -fx-max-height: 0;
+}

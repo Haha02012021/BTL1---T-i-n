@@ -71,6 +71,8 @@ public class MeaningView {
 
     public VBox meaningVBox() {
         VBox meaning = new VBox();
+        meaning.setMinWidth(500);
+        meaning.setPrefSize(VBox.USE_COMPUTED_SIZE, VBox.USE_COMPUTED_SIZE);
         meaning.setSpacing(4);
         TextFlow pronun = new TextFlow();
         if (word.getPronunciation() != null) pronun.getChildren().add(new Text(word.getPronunciation()));

@@ -5,17 +5,19 @@
 <?import javafx.scene.control.TextArea?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
-<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="780.0" style="-fx-background-color: #084E91;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.GgtransController">
-   <top>
-      <HBox alignment="CENTER" prefHeight="60.0" prefWidth="780.0" style="-fx-background-color: #084E91;" BorderPane.alignment="CENTER">
+
+<AnchorPane xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.GgtransController">
+   <children>
+      <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="60.0" style="-fx-background-color: #084E91;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
-            <Label text="Anh" textFill="WHITE">
+            <Pane prefHeight="60.0" prefWidth="10.0" />
+            <Label prefHeight="60.0" text="Anh" textFill="WHITE">
                <font>
                   <Font size="18.0" />
                </font>
@@ -23,7 +25,7 @@
                   <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                </padding>
             </Label>
-            <Label text="Việt" textFill="WHITE">
+            <Label prefHeight="60.0" text="Việt" textFill="WHITE">
                <font>
                   <Font size="18.0" />
                </font>
@@ -31,13 +33,13 @@
                   <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                </padding>
             </Label>
-            <Pane prefHeight="60.0" prefWidth="245.0" />
+            <Pane prefHeight="60.0" HBox.hgrow="ALWAYS" />
             <ImageView fitHeight="150.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../image/transfer.png" />
                </image>
             </ImageView>
-            <Pane prefHeight="60.0" prefWidth="44.0" />
+            <Pane prefHeight="60.0" prefWidth="10.0" />
             <Label text="Việt" textFill="WHITE">
                <font>
                   <Font size="18.0" />
@@ -54,59 +56,59 @@
                   <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                </padding>
             </Label>
-            <Pane prefHeight="60.0" prefWidth="200.0" />
+            <Pane prefHeight="60.0" HBox.hgrow="ALWAYS" />
          </children>
       </HBox>
-   </top>
-   <left>
-      <VBox prefHeight="540.0" prefWidth="390.0" BorderPane.alignment="CENTER">
+      <HBox layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="60.0">
          <children>
-            <TextArea prefHeight="500.0" prefWidth="200.0" promptText="Nhập vào đây" style="-fx-border-color: white;" wrapText="true">
-               <font>
-                  <Font size="16.0" />
-               </font>
-            </TextArea>
-            <HBox alignment="CENTER_LEFT" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: white;">
+            <VBox HBox.hgrow="ALWAYS">
                <children>
-                  <ImageView fitHeight="150.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../image/microphone-black-shape.png" />
-                     </image>
-                     <HBox.margin>
-                        <Insets left="10.0" right="10.0" />
-                     </HBox.margin>
-                  </ImageView>
-                  <ImageView fitHeight="150.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../image/volume-up-interface-symbol-blue.png" />
-                     </image>
-                  </ImageView>
+                  <TextArea minHeight="500.0" minWidth="390.0" promptText="Nhập vào đây" style="-fx-border-color: white;" wrapText="true" VBox.vgrow="ALWAYS">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </TextArea>
+                  <HBox alignment="CENTER_LEFT" maxHeight="40.0" prefHeight="40.0" style="-fx-background-color: white;" VBox.vgrow="ALWAYS">
+                     <children>
+                        <ImageView fitHeight="150.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/microphone-black-shape.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="10.0" right="10.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <ImageView fitHeight="150.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/volume-up-interface-symbol-blue.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </HBox>
                </children>
-            </HBox>
-         </children>
-      </VBox>
-   </left>
-   <right>
-      <VBox prefHeight="540.0" prefWidth="390.0" BorderPane.alignment="CENTER">
-         <children>
-            <TextArea editable="false" prefHeight="500.0" prefWidth="200.0" promptText="Dịch ở đây" style="-fx-border-color: white;" wrapText="true">
-               <font>
-                  <Font size="16.0" />
-               </font>
-            </TextArea>
-            <HBox alignment="CENTER_LEFT" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: white;">
+            </VBox>
+            <VBox HBox.hgrow="ALWAYS">
                <children>
-                  <ImageView fitHeight="150.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../image/volume-up-interface-symbol-blue.png" />
-                     </image>
-                     <HBox.margin>
-                        <Insets left="10.0" right="10.0" />
-                     </HBox.margin>
-                  </ImageView>
+                  <TextArea editable="false" minHeight="500.0" minWidth="390.0" promptText="Dịch ở đây" style="-fx-border-color: white;" wrapText="true" VBox.vgrow="ALWAYS">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </TextArea>
+                  <HBox alignment="CENTER_LEFT" maxHeight="40.0" prefHeight="40.0" style="-fx-background-color: white;" VBox.vgrow="ALWAYS">
+                     <children>
+                        <ImageView fitHeight="150.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/volume-up-interface-symbol-blue.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="10.0" right="10.0" />
+                           </HBox.margin>
+                        </ImageView>
+                     </children>
+                  </HBox>
                </children>
-            </HBox>
+            </VBox>
          </children>
-      </VBox>
-   </right>
-</BorderPane>
+      </HBox>
+   </children>
+</AnchorPane>

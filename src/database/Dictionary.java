@@ -7,10 +7,12 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class Dictionary {
-    public ArrayList<Word> dict = new ArrayList<>(109000);
+    private ArrayList<Word> dict = new ArrayList<>(109000);
+    private String language;
 
     public Dictionary(String language) {
         try {
+            this.language = language;
             File file = new File(getClass().getResource(language + ".txt").toURI()); // tạo đường dẫn tương đối
             Scanner sc = new Scanner(file);
 
@@ -24,7 +26,7 @@ public class Dictionary {
                 m = pattern.matcher(line);
                 if (m.find()) {
                     // tạo đối tượng word mới và thêm vào dict (quy tắc tham chiếu)
-                    word = new Word(m.group(1).trim(), m.group(2), "");
+                    word = new Word(m.group(1).trim(), m.group(2), "", false);
                     this.dict.add(word);
                 } else word.addMeaning(line); //lúc này word là từ cuối cùng trong dict. Method addMeaning sẽ thêm dòng vào thuộc tính meaning
             }
@@ -37,11 +39,23 @@ public class Dictionary {
         }
     }
 
+    public String getLanguage() {
+        return this.language;
+    }
+
+    public void setLanguage(String language) {
+        this.language = language;
+    }
+
     public ArrayList<Word> getAllWord() {
         return this.dict;
     }
 
     public Word getWord(int index) {
         return this.dict.get(index);
+    }
+
+    public void setAWord(int indexWord, Word word) {
+        this.dict.set(indexWord, word);
     }
 }
