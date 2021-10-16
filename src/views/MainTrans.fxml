@@ -14,9 +14,9 @@
 
 <AnchorPane fx:id="contentBox" minHeight="500.0" minWidth="780.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainTransController">
    <children>
-      <VBox fx:id="searchVBox" layoutX="10.0" layoutY="10.0" style="-fx-background-color: #064279;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <VBox fx:id="searchVBox" layoutX="10.0" layoutY="10.0" prefWidth="360.0" style="-fx-background-color: #064279;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
-            <VBox>
+            <VBox prefHeight="100.0">
                <children>
                   <HBox alignment="CENTER" prefHeight="27.0" prefWidth="280.0">
                      <children>
@@ -43,7 +43,7 @@
                         <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
                      </VBox.margin>
                      <children>
-                        <TextField fx:id="typeSearch" layoutX="1.0" maxHeight="40.0" prefHeight="50.0" promptText="english" style="-fx-background-color: 0; -fx-font-family: Roboto;">
+                        <TextField fx:id="typeSearch" focusTraversable="false" layoutX="1.0" maxHeight="40.0" prefHeight="40.0" prefWidth="344.0" promptText="english" style="-fx-background-color: 0; -fx-font-family: Roboto;">
                            <font>
                               <Font size="16.0" />
                            </font>
@@ -52,15 +52,19 @@
                   </Pane>
                </children>
             </VBox>
-            <VBox fx:id="searchBox" VBox.vgrow="ALWAYS" />
+            <ScrollPane fitToHeight="true" fitToWidth="true" hbarPolicy="NEVER" style="-fx-background-color: transprent; -fx-border-color: transprent;" vbarPolicy="NEVER" VBox.vgrow="ALWAYS">
+               <content>
+                  <VBox fx:id="searchBox" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #064279;" />
+               </content>
+            </ScrollPane>
          </children>
       </VBox>
-      <VBox layoutX="10.0" layoutY="10.0" minHeight="600.0" minWidth="500.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="280.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <VBox layoutX="10.0" layoutY="10.0" minHeight="600.0" minWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="360.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
             <HBox fx:id="titleHBox" fillHeight="false" minHeight="100.0" minWidth="500.0" style="-fx-background-color: #084E91;">
                <children>
                   <Pane minWidth="10.0" />
-                  <VBox alignment="CENTER_LEFT" maxHeight="100.0" minWidth="350.0" prefHeight="100.0" HBox.hgrow="ALWAYS">
+                  <VBox alignment="CENTER_LEFT" maxHeight="100.0" minWidth="350.0" prefHeight="100.0">
                      <children>
                         <HBox prefHeight="21.0">
                            <children>
@@ -95,22 +99,7 @@
                   <Pane maxHeight="100.0" minWidth="30.0" prefHeight="100.0" HBox.hgrow="ALWAYS" />
                   <Pane fx:id="volumnPane" prefHeight="100.0">
                      <children>
-                        <Label layoutX="15.0" layoutY="20.0" text="US" textFill="WHITE">
-                           <font>
-                              <Font name="Arial Bold" size="16.0" />
-                           </font>
-                        </Label>
-                        <Label layoutX="15.0" layoutY="55.0" text="UK" textFill="WHITE">
-                           <font>
-                              <Font name="Arial Bold" size="16.0" />
-                           </font>
-                        </Label>
-                        <ImageView fitHeight="150.0" fitWidth="25.0" layoutX="45.0" layoutY="18.0" onMouseClicked="#usSpeak" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../image/volume-up-interface-symbol.png" />
-                           </image>
-                        </ImageView>
-                        <ImageView fitHeight="150.0" fitWidth="25.0" layoutX="45.0" layoutY="52.0" onMouseClicked="#ukSpeak" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="150.0" fitWidth="25.0" layoutX="45.0" layoutY="60.0" onMouseClicked="#speakButton" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../image/volume-up-interface-symbol.png" />
                            </image>

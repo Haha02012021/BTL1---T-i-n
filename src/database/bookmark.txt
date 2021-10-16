@@ -1,78 +1,144 @@
-@top secret /'tɔp'si:krit/
-*  tính từ
-- tối mật
-@top /tɔp/
-*  danh từ
-- con cù, con quay
-=the top sleeps; the top is asleep+ con cù quay tít
-!old top
--(thân mật) bạn tri kỷ, bạn nối khố
-!to sleep like a top
-- ngủ say
-*  danh từ
-- chóp, đỉnh, ngọn, đầu
-=the top of a hill+ đỉnh đồi
-=the top of the page+ đầu trang
-=at the top of+ trên đỉnh
-=from top to bottom+ từ đầu đến cuối, từ trên xuống dưới
-=from top to toe+ từ đầu đến chân
-=on top+ phía trên, trên
-=on [the] top of+ trên, nằm trên
-=he came out at the top of the list+ nó đứng đẩu bảng (kỳ thi...)
-=on top of that+ thêm vào đó, phụ vào đó
-- mặt (bàn); mui (xe); vung (xoong)
-- đỉnh cao, mức cao
-=the top of the ladder+ (nghĩa bóng) đỉnh cao của sự nghiệp
-=to come to the top+ được hưởng vinh quang, đạt được danh vọng; thắng lợi
-=at the top of one's speed+ chạy hết sức nhanh, ba chân bốn cẳng
-=at the top of one's voice+ nói hết sức to
-- số cao nhất (đi ô tô)
-=in (on) top+ gài số cao nhất
-- ((thường) số nhiều) thân lá (của cây trồng lấy củ)
-*  tính từ
-- ở ngọn, đứng đầu, trên hết
-=the top branch+ cành ngọn
-=the top boy+ học sinh đầu lớp
-- cao nhất, tối đa
-=top speed+ tốc độ cao nhất
-*  ngoại động từ
-- đặt ở trên, chụp lên
-=mountains topped with clouds+ ngọn núi có mây phủ
-=to top a class+ đứng đầu một lớp
-- bấm ngọn, cắt phần trên
-=to top a plant+ bấm ngọn một cây
-- lên đến đỉnh; ở trên đỉnh
-=to top a hill+ lên tới đỉnh một quả đồi; đứng trên đỉnh đồi
-- vượt, cao hơn
-=to top someone by a head+ cao hơn ai một cái đầu
-=that story tops all I have ever heard+ câu chuyện ấy hay hơn tất cả những câu chuyện mà tôi đã từng được nghe
-- (thông tục) đo được, cao đến
-=the tree tops three meters+ cây cao đến ba mét
-!to top off
-- hoàn thành, làm xong
-!to top up
-- làm cho đầy ấp
-- hoàn thành
-@kè 
-- (tiếng địa phương) Fan-palm
-=Nhà lợp bằng lá kè+A house roofed with fan-palm leaves
--Stone embankment
-=Xây kè đắp đập+To build stone embankments and dams
-@k-ration /'kei,ræʃn/
-*  danh từ
-- (từ Mỹ,nghĩa Mỹ),  (quân sự) khẩu phần chiến đấu (gồm lương khô và đồ hộp)
-@pan 
-- Breakdown
-@d /di:/
-*  danh từ,  số nhiều Ds,  D's
-- Đ,  đ 2 500 (chữ số La-mã)
-- (âm nhạc) rê
-- vật hình D (bu-lông, van...)
-@tà dâm 
+@to 
 * adj
-- obscene, inlecent
-@a ha 
-* excl
-- Aha, ha; hurrah, hurray
-=a ha! tên trộm bị cảnh sát tóm rồi!+Ha! the thief is caught by the police!
-=a ha! cô gái xinh quá!+hurrah! What a pretty girl!
+- big
+
+
+@La mã hóa 
+- Romanize
+
+
+@xem xét 
+* verb
+- to examine
+
+
+@like /laik/
+*  tính từ
+- giống, giống nhau, như nhau, tương tự, cùng loại
+=as like as two peas+ giống nhau như hai giọt nước
+=what's he like?+ anh ta là người như thế nào? anh ta là hạng người như thế nào?
+- thực đúng, đúng như mong đợi
+=it's like a Vietnamese to thirst for learning+ hiếu học thực đúng đặc tính người Việt Nam
+=this poetry is something like+ thơ này mới thật là thơ
+- thích, sãn sàng, sãn lòng, vui lòng
+=not to feel like going out today+ cảm thấy không thích đi chơi hôm nay
+- có vẻ như
+=it looks like rain+ có vẻ như trời muốn mưa
+- gần, khoảng độ
+=something like 100d+ khoảng độ 100 đồng
+!like father like son
+- cha nào con nấy
+!like master like man
+- thầy nào tớ nấy
+*  giới từ
+- như
+=don't talk like that+ đừng nói như vậy
+=like mad+ như điên, điên cuồng
+!like a shot
+- không ngần ngại, sãn lòng; bất chấp hậu quả
+!sure like rain
+- chắc như đinh đóng cột
+*  phó từ
+- like very; like enough rất có thể
+*  liên từ
+- (thông tục) thay cho as như
+=I cannot do it like you do+ tôi không thể làm cái đó như anh làm
+*  danh từ
+- người thuộc loại như; vật thuộc loại như
+=did not ever see the like of it?+ có bao giờ anh trông thấy cái giống như cái đó không?
+=music, painting and the like+ âm nhạc, hội hoạ và những môn thuộc loại đó
+=the likes of me+ (thông tục) những kẻ hèn như tôi
+=the likes of you+ (thông tục) những bậc cao sang như anh
+!like cures like
+- lấy độc trị độc
+!to return like for like
+- lấy ơn trả ơn, lấy oán trả oán
+*  danh từ
+- cái thích
+=likes and dislikes+ những cái thích và những cái không thích
+*  ngoại động từ
+- thích ưa, chuộng, yêu
+=do you like fish?+ anh có thích cá không?
+=I like his cheek+(mỉa mai) tôi mới thích thái độ láo xược của hắn làm sao
+- (would like,  should like) muốn, ước mong
+=I should like a cup of tea+ tôi muốn có một tách chè
+=parents like their children to be successful in file+ bố mẹ muốn cho con cái thành công ở đời
+=I'd like to know (see)+ thử cho tôi biết (xem) nào!
+- thích hợp, hợp với (thể trạng, sức khoẻ...)
+=wine does not like me+ rượu vang không hợp với thể trạng của tôi, tôi không chịu đựng được rượu vang
+*  nội động từ
+- thích, muốn
+=you may do as you like+ anh có thể làm theo như ý thích
+
+
+
+@thương 
+* noun
+- long-handled spear
+* verb
+- to love tenderly
+
+
+@i /ai/
+*  danh từ,  số nhiều Is,  I's
+- một (chữ số La mã)
+- vật hình I
+!to dot the i's and cross the t's
+- (xem) dot
+*  đại từ
+- tôi, ta, tao, tớ
+=i said so+ tôi nói vậy
+=you know it as well as i [do]+ anh cũng biết rõ điều đó như tôi
+*  danh từ
+- the i (triết học) cái tôi
+
+
+
+@yêu 
+* verb
+- love, to be in love with
+
+
+@you /ju:/
+*  đại từ
+- anh, chị, ông, bà, ngài, ngươi, mày; các anh, các chị, các ông, các bà, các ngài, các người, chúng mày
+=you all know that...+ tất cả các anh đều biết rằng...
+=he spoke of you+ hắn ta nói về anh
+=if I were you+ nếu tôi là anh
+=you there what is your name?+ anh kia, tên anh là gì?
+- ai, người ta
+=you never can tell+ ai biết đâu được
+
+
+
+@lắm 
+* adv. much; many; very; a lot
+=tôi yêu cô ta lắm+I'm very love of her
+=lắm lần+many times
+
+
+@u /ju:/
+*  danh từ,  số nhiều Us,  U's
+- U, u
+- vật hình U
+
+
+
+@no /nou/
+*  phó từ
+- không
+=no, I don't think so+ không, tôi không nghĩ như vậy
+=whether he comes or no+ dù nó đến hay không
+=no some said than done+ nói xong là làm ngay
+=I say no more+ tôi không nói nữa
+=he is no longer here+ anh ta không còn ở đây nữa
+=he is no more+ anh ta không còn nữa (chết rồi)
+*  danh từ,  số nhiều noes
+- lời từ chối, lời nói "không" ; không
+=we can't take no for an answer+ chúng tôi không thể chấp nhận được câu trả lời từ chối
+- phiếu chống; người bỏ phiếu chống
+=the noes have it+ phiếu chống chiếm đa số; đa số bỏ phiếu chống
+=the ayes and the noes+ phiếu thuận và phiếu chống
+
+
+

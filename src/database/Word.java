@@ -1,6 +1,6 @@
 package database;
 
-public class Word {
+public class Word implements Comparable<Word>{
     private String english;
     private String pronunciation;
     private String meaning;
@@ -39,5 +39,11 @@ public class Word {
 
     public void addMeaning(String line) {
         this.meaning += line + "\n";
+    }
+
+
+    @Override
+    public int compareTo(Word o) {
+        return this.getEnglish().compareTo(o.getEnglish());
     }
 }
