@@ -1,0 +1,45 @@
+.anchor-pane {
+    -fx-font-family: 'Roboto';
+}
+
+.funcPane:hover {
+    -fx-background-color:  #0A72C2; 
+    -fx-background-radius: 5; 
+    -fx-border-color:  #084E91; 
+    -fx-border-radius: 5;
+    -fx-background-insets: -5;
+}
+
+.combo-box {
+    -fx-font-size: 14px;
+}
+
+.combo-box .list-view {
+    -fx-border-width: 0;
+    -fx-border-color: transparent;
+    -fx-background-color: white;
+    -fx-padding: 0px;
+    -fx-font-family: Roboto;
+    -fx-border-radius: 10px 10px 0px 0px;
+    -fx-background-radius: 10px 10px 0px 0px;
+}
+
+.combo-box .list-view .list-cell:filled{
+    -fx-text-fill: black;
+    -fx-font-size: 14px;
+    -fx-padding: 5px;
+}
+
+.combo-box .list-view .list-cell:hover{
+    -fx-background-color: #084E91;
+    -fx-text-fill: white;
+}
+
+.combo-box .list-view .list-cell:active {
+    -fx-background-color: #084E91;
+    -fx-text-fill: white;
+}
+
+.alert *.button {
+    -fx-background-color: blue;
+}
