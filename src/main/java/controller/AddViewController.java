@@ -74,13 +74,13 @@ public class AddViewController implements Initializable{
             } else if (!(nameFile.equals("") && newWord.equals(""))) {
                 Dictionary dictionary = new Dictionary(nameFile);
                 ArrayList<Word> dict = dictionary.getAllWord();
-                int index = ManageApp.findWord(dict, newWord.toLowerCase().trim());
+                int index = ManageApp.findWord(dict, newWord.trim());
                 Word word = new Word(newWord, newPronun, newMeaning, false);
                 if (!newPronun.equals("") && !m.find()) {
                     Alert confimAlert1 = new Alert(Alert.AlertType.CONFIRMATION);
                     confimAlert1.setTitle("BÁO");
                     confimAlert1.setHeaderText("BÁOOO");
-                    confimAlert1.setContentText("Định dạng phát âm không đúng? Bạn có muốn tự động tạo định dạng /từ/ không? Bấm YES để đồng ý. Chọn NO, phát âm mới của bạn sẽ bị xóa!");
+                    confimAlert1.setContentText("Định dạng phát âm không đúng! \nBạn có muốn tự động tạo định dạng /từ/ không? \nBấm YES để đồng ý. \nChọn NO, phát âm mới của bạn sẽ bị xóa!");
         
                     ButtonType buttonTypeYES = new ButtonType("YES", ButtonBar.ButtonData.YES);
                     ButtonType buttonTypeNO = new ButtonType("NO", ButtonBar.ButtonData.NO);

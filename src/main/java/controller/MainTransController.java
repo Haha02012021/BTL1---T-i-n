@@ -93,7 +93,7 @@ public class MainTransController implements Initializable {
             if(!t1.trim().isEmpty()) {
                 searchBox.getChildren().clear();
 
-                ArrayList<Word> words = ManageApp.suggestWord(dictionary.getAllWord(), t1.trim().toLowerCase(Locale.ROOT));
+                ArrayList<Word> words = ManageApp.suggestWord(dictionary.getAllWord(), t1.trim());
                 int size = words.size();
                 for (int i = 0; i < size; i++) {
 

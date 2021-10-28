@@ -64,7 +64,7 @@ public class Dictionary {
 
     public void writeToDictionary(ArrayList<Word> words) {
         try {
-            try (PrintWriter writer = new PrintWriter("src/main/resources/database/" + language + ".txt")) {
+            try (PrintWriter writer = new PrintWriter(new File("src/main/resources/database/" + language + ".txt"))) {
                 for (Word w: words) {
                     writer.print(ManageApp.wordToString(w));
                 }

@@ -59839,6 +59839,7 @@ _trash
 - to add
 * adj
 - additional, added
+@thêm 1 từ 
 @thêm bớt 
 * verb
 - adjust to add or cut details
@@ -70082,10 +70083,6 @@ _trash
 @đoán chừng 
 - Infer (fro what is known)
 =Cũng đoán chừng thế thôi, chưa chắc đã đúng+To infer a conclusion just like that without any certainly of correctness
-@ đoán định
-* verb
--Udge and decide
-=Giữ toàn quyền đoán định+To hold a full right to udge ad decide
 @đoán già 
 - Make a positive affirmation o uncertainn grounds
 =Tuy chưa biết gì chắc chắn về việc đó, nhưng cũng cứ đoán già+To make a positive affirmation on something one has not got any factual information
@@ -70098,6 +70095,10 @@ _trash
 @đoán trước 
 * verb
 - to foretell; to foresee; to anticipate
+@đoán định 
+* verb
+-Udge and decide
+=Giữ toàn quyền đoán định+To hold a full right to udge ad decide
 @đoạn 
 * noun
 - Section; pant ; portion; passage; Paragraph

@@ -1,6 +1,5 @@
 package app;
 
-import database.Dictionary;
 import database.Word;
 
 import java.util.ArrayList;
@@ -41,16 +40,28 @@ public class ManageApp {
     }
 
     public static ArrayList<Word> suggestWord(ArrayList<Word> words, String word) {
-        word = word.trim().toLowerCase(Locale.ROOT);
+        word = word.trim();
         ArrayList<Word> wordArr = new ArrayList<>();
+        ArrayList<Word> otherWordArr = new ArrayList<>();
 
         Pattern pattern = Pattern.compile("^" + word);
         for (Word w: words) {
-            Matcher matcher = pattern.matcher(w.getEnglish().toLowerCase());
+            Matcher matcher = pattern.matcher(w.getEnglish());
+            Matcher matcher2 = pattern.matcher(w.getEnglish().toLowerCase());
             if (matcher.find()) {
                 wordArr.add(w);
                 if (wordArr.size() == 20) return wordArr;
             }
+
+            if (matcher2.find()) {
+                if (otherWordArr.size() < 20) otherWordArr.add(w);
+            }
+        }
+
+        if (wordArr.size() == 0 && otherWordArr.size() != 0) return otherWordArr;
+        else if (wordArr.size() < 20 && otherWordArr.size() != 0) {
+            otherWordArr.removeAll(wordArr);
+            wordArr.addAll(otherWordArr);
         }
 
         return wordArr;
@@ -58,7 +69,7 @@ public class ManageApp {
 
     public static String wordToString(Word word) {
         String result = "@" + word.getEnglish() + " ";
-        if (word.getPronunciation() != null) result += cleanEnterLast(word.getPronunciation());
+        if (word.getPronunciation() != null && !word.getPronunciation().equals("")) result += cleanEnterLast(word.getPronunciation());
         else result += "\n";
         result += cleanEnterLast(word.getMeaning());
         return result;
