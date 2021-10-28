@@ -26,7 +26,6 @@ import javafx.scene.control.ButtonBar;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
-import javafx.scene.media.MediaPlayer.Status;
 
 public class GgtransController implements Initializable{
     @FXML
@@ -142,12 +141,13 @@ public class GgtransController implements Initializable{
             } else {
                 language = "vi-VI";
             }
+
+            
             try {
                 URL speakURL = new URL("https://translate.google.com/translate_tts?ie=UTF-8&q=" + text.toLowerCase(Locale.ROOT).trim() + "&tl=" + language + "&total=1&idx=0&textlen=7&client=tw-ob&prev=input&ttsspeed=1");
                 URLConnection connection = speakURL.openConnection();
                 connection.connect();
             } catch (Exception e) {
-                //TODO: handle exception
                 Alert savedAlert = new Alert(Alert.AlertType.ERROR);
                 savedAlert.setTitle("Confirmation");
                 savedAlert.setHeaderText("OH NO!");
@@ -177,12 +177,11 @@ public class GgtransController implements Initializable{
             } else {
                 language = "vi-VI";
             }
-            Media media = new Media("https://translate.google.com/translate_tts?ie=UTF-8&q=" + text.toLowerCase(Locale.ROOT).trim() + "&tl=" + language + "&total=1&idx=0&textlen=7&client=tw-ob&prev=input&ttsspeed=1");
-            MediaPlayer mediaPlayer = new MediaPlayer(media);
-            Status status = mediaPlayer.getStatus();
-
-            if (status == Status.HALTED || status == Status.UNKNOWN)
-            {
+            try {
+                URL speakURL = new URL("https://translate.google.com/translate_tts?ie=UTF-8&q=" + text.toLowerCase(Locale.ROOT).trim() + "&tl=" + language + "&total=1&idx=0&textlen=7&client=tw-ob&prev=input&ttsspeed=1");
+                URLConnection connection = speakURL.openConnection();
+                connection.connect();
+            } catch (Exception e) {
                 Alert savedAlert = new Alert(Alert.AlertType.ERROR);
                 savedAlert.setTitle("Confirmation");
                 savedAlert.setHeaderText("OH NO!");
@@ -192,9 +191,11 @@ public class GgtransController implements Initializable{
                 savedAlert.getButtonTypes().setAll(okButton);
                 savedAlert.show();
                 return;
-            } else {
-                mediaPlayer.play();
             }
+
+            Media media = new Media("https://translate.google.com/translate_tts?ie=UTF-8&q=" + text.toLowerCase(Locale.ROOT).trim() + "&tl=" + language + "&total=1&idx=0&textlen=7&client=tw-ob&prev=input&ttsspeed=1");
+            MediaPlayer mediaPlayer = new MediaPlayer(media);
+            mediaPlayer.play();
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
@@ -212,9 +213,15 @@ public class GgtransController implements Initializable{
         try {
             response = HttpClient.newHttpClient().send(request, HttpResponse.BodyHandlers.ofString());
         } catch (IOException | InterruptedException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-            return "Vui lòng kết nối Internet để thực hiện chức năng này!";
+            Alert savedAlert = new Alert(Alert.AlertType.ERROR);
+            savedAlert.setTitle("Confirmation");
+            savedAlert.setHeaderText("OH NO!");
+            savedAlert.setContentText("Hãy kết nối Internet để thực hiện chức năng này!");
+            ButtonType okButton = new ButtonType("OK", ButtonBar.ButtonData.OK_DONE);
+
+            savedAlert.getButtonTypes().setAll(okButton);
+            savedAlert.show();
+            return "";
         }
         //System.out.println(response.body());
 

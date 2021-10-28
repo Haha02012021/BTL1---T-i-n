@@ -46,4 +46,16 @@ public class Word implements Comparable<Word>{
     public int compareTo(Word o) {
         return this.getEnglish().compareTo(o.getEnglish());
     }
+
+    public void setEnglish(String english) {
+        this.english = english;
+    }
+    public void setPronunciation(String pronunciation) {
+        this.pronunciation = pronunciation;
+    }
+
+    public boolean isBookmark() {
+        return this.bookmark;
+    }
+
 }

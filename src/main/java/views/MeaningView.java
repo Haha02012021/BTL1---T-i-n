@@ -80,15 +80,20 @@ public class MeaningView {
         Scanner sc = new Scanner(word.getMeaning());
         Pattern example = Pattern.compile("\\=([^\\+]+)\\+ ([^\\r\\n]+)");
         while (sc.hasNext()) {
-            String line = sc.nextLine();
-            if (line.charAt(0) == '*') meaning.getChildren().add(partOfSpeechText(line.substring(2)));
-            else if (line.charAt(0) == '-') meaning.getChildren().add(meaningLineText(line.substring(2)));
-            else if (line.charAt(0) == '!') meaning.getChildren().add(phraseText(line.substring(1)));
-            else if (line.charAt(0) == '=') {
-                Matcher m = example.matcher(line);
-                if (m.find()) meaning.getChildren().addAll(exampleText(m.group(1)), exampleMeaningText(m.group(2)));
+            try {
+                String line = sc.nextLine();
+                if (line.charAt(0) == '*') meaning.getChildren().add(partOfSpeechText(line.substring(2)));
+                else if (line.charAt(0) == '-') meaning.getChildren().add(meaningLineText(line.substring(2)));
+                else if (line.charAt(0) == '!') meaning.getChildren().add(phraseText(line.substring(1)));
+                else if (line.charAt(0) == '=') {
+                    Matcher m = example.matcher(line);
+                    if (m.find()) meaning.getChildren().addAll(exampleText(m.group(1)), exampleMeaningText(m.group(2)));
             }
             else meaning.getChildren().add(pronunText(line));
+            } catch (Exception e) {
+                //TODO: handle exception
+                System.out.println(e.getMessage());
+            }
         }
         meaning.setStyle("-fx-font-size: 16; -fx-background-color: white;");
         return meaning;

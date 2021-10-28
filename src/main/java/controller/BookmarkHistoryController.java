@@ -41,7 +41,6 @@ import javafx.scene.layout.Pane;
 import javafx.scene.layout.VBox;
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
-import javafx.scene.media.MediaPlayer.Status;
 import javafx.scene.text.Font;
 import javafx.scene.text.FontPosture;
 import javafx.scene.text.FontWeight;
@@ -190,7 +189,6 @@ public class BookmarkHistoryController implements Initializable {
                 URLConnection connection = speakURL.openConnection();
                 connection.connect();
             } catch (Exception e) {
-                //TODO: handle exception
                 Alert savedAlert = new Alert(Alert.AlertType.ERROR);
                 savedAlert.setTitle("Confirmation");
                 savedAlert.setHeaderText("OH NO!");

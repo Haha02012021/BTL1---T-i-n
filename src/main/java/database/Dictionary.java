@@ -1,12 +1,7 @@
 package database;
 
-import java.io.BufferedWriter;
 import java.io.File;
-import java.io.FileOutputStream;
-import java.io.FileWriter;
 import java.io.InputStream;
-import java.io.OutputStream;
-import java.io.OutputStreamWriter;
 import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -28,9 +23,8 @@ public class Dictionary {
         Pattern pattern = Pattern.compile("@([^/]+)(/[^/]+/)?"); // tạo pattern để match dòng đầu của mỗi từ
 
         try {
-            
                 InputStream input = getClass().getResourceAsStream(language + ".txt");
-                Scanner reader = new Scanner(input);
+                Scanner reader = new Scanner(input, "UTF-8");
                 while(reader.hasNextLine()) {
                     line = reader.nextLine();
                     m = pattern.matcher(line);
@@ -70,7 +64,7 @@ public class Dictionary {
 
     public void writeToDictionary(ArrayList<Word> words) {
         try {
-            try (PrintWriter writer = new PrintWriter(getClass().getResource(language + ".txt").getPath())) {
+            try (PrintWriter writer = new PrintWriter("src/main/resources/database/" + language + ".txt")) {
                 for (Word w: words) {
                     writer.print(ManageApp.wordToString(w));
                 }

@@ -71,18 +71,6 @@
                </VBox.margin>
             </Pane>
             <Pane prefHeight="10.0" prefWidth="60.0" VBox.vgrow="ALWAYS" />
-            <Pane maxWidth="40.0" onMouseClicked="#colorButton" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #0A72C2; -fx-background-radius: 5;" styleClass="funcPane">
-               <children>
-                  <ImageView fitHeight="150.0" fitWidth="30.0" layoutX="5.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../image/paint-roller.png" />
-                     </image>
-                  </ImageView>
-               </children>
-               <VBox.margin>
-                  <Insets />
-               </VBox.margin>
-            </Pane>
             <Pane prefHeight="245.0" prefWidth="60.0" VBox.vgrow="ALWAYS" />
             <Pane fx:id="infoPane" maxWidth="40.0" onMouseClicked="#infoButton" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #0A72C2; -fx-background-radius: 5;" styleClass="funcPane">
                <children>

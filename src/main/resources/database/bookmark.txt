@@ -1,17 +1,11 @@
 @to 
 * adj
 - big
-
-
 @La mã hóa 
 - Romanize
-
-
 @xem xét 
 * verb
 - to examine
-
-
 @like /laik/
 *  tính từ
 - giống, giống nhau, như nhau, tương tự, cùng loại
@@ -69,16 +63,6 @@
 *  nội động từ
 - thích, muốn
 =you may do as you like+ anh có thể làm theo như ý thích
-
-
-
-@thương 
-* noun
-- long-handled spear
-* verb
-- to love tenderly
-
-
 @i /ai/
 *  danh từ,  số nhiều Is,  I's
 - một (chữ số La mã)
@@ -91,14 +75,9 @@
 =you know it as well as i [do]+ anh cũng biết rõ điều đó như tôi
 *  danh từ
 - the i (triết học) cái tôi
-
-
-
 @yêu 
 * verb
 - love, to be in love with
-
-
 @you /ju:/
 *  đại từ
 - anh, chị, ông, bà, ngài, ngươi, mày; các anh, các chị, các ông, các bà, các ngài, các người, chúng mày
@@ -108,46 +87,82 @@
 =you there what is your name?+ anh kia, tên anh là gì?
 - ai, người ta
 =you never can tell+ ai biết đâu được
-
-
-
 @lắm 
 * adv. much; many; very; a lot
 =tôi yêu cô ta lắm+I'm very love of her
 =lắm lần+many times
-
-
 @u /ju:/
 *  danh từ,  số nhiều Us,  U's
 - U, u
 - vật hình U
-
-
-
-@no /nou/
-*  phó từ
-- không
-=no, I don't think so+ không, tôi không nghĩ như vậy
-=whether he comes or no+ dù nó đến hay không
-=no some said than done+ nói xong là làm ngay
-=I say no more+ tôi không nói nữa
-=he is no longer here+ anh ta không còn ở đây nữa
-=he is no more+ anh ta không còn nữa (chết rồi)
-*  danh từ,  số nhiều noes
-- lời từ chối, lời nói "không" ; không
-=we can't take no for an answer+ chúng tôi không thể chấp nhận được câu trả lời từ chối
-- phiếu chống; người bỏ phiếu chống
-=the noes have it+ phiếu chống chiếm đa số; đa số bỏ phiếu chống
-=the ayes and the noes+ phiếu thuận và phiếu chống
-
-
-
 @DOS (Disk Operating System) 
 - (Tech) Hệ Thống Vận Hành Trên Đĩa, hệ điều hành DOS
-
-
 @Kalman filtering 
 - (Econ) Phép lọc Kalman.
 + Đây là phương pháp tối ưu để dự đoán CÁC BIẾN SỐ NỘI SINH và cập nhật những THÔNG SỐ ƯỚC LƯỢNG trong các phương trình dự đoán.
-
-
+@sad /sæd/
+*  tính từ
+- buồn rầu, buồn bã
+=to look sad+ trông buồn
+-(đùa cợt) quá tồi, không thể sửa chữa được
+- không xốp, chắc (bánh)
+- chết (màu sắc)
+=sad colours+ màu chết
+@Nominal and real interest rates 
+- (Econ) Lãi suất danh nghĩa và lãi suất thực tế.
+@meow 
+* nội động từ
+- kêu meo meo (mèo)
+* danh từ
+- meo meo (tiếng mèo kêu)
+@not 
+- không
+@door /dɔ:/
+*  danh từ
+- cửa, cửa ra vào (nhà, xe ô tô...)
+=front door+ cửa trước
+=side door+ cửa bên
+- cửa ngõ, con đường
+=a door to success+ con đường thành công
+=to opera a door to peace+ mở con đường đi đến hoà bình
+!a few doors off
+- cách vài nhà, cách vài buồng
+!at death's door
+- bên ngưỡng cửa của thần chết, hấp hối, gần chết
+!to close the door upon
+- làm cho không có khả năng thực hiện được
+!to lay at someone's door
+- đổ (lỗi...) cho ai, quy (tội...) cho ai
+!to lie at the door of
+- chịu trách nhiệm, đổ lên đầu (ai...)
+=the fault lies at your door+ anh phải chịu trách nhiệm về lỗi đó, lỗi đổ lên đầu anh
+!to live next door
+- ở ngay sát vách, ở nhà bên cạnh, ở buồng bên cạnh
+!to open the door to
+- (xem) open
+!out of doors
+- ở ngoài, không ở nhà; ở ngoài trời
+=to be out of doors+ đi ra ngoài, đi chơi vắng không ở nhà
+=to play out of doors+ chơi ở ngoài trời
+!to show somebody the door
+!to show the door to somebody
+- đuổi ai ra khỏi cửa
+!to show somebody to the door
+- tiễn ai ra tận cửa
+!to shut the door in somebody's face
+- đóng sập cửa lại trước mặt ai, không thèm tiếp ai
+!to turn somebody out of doors
+- đuổi ai ra khỏi cửa
+!with closed doors
+- họp kín, xử kín
+!within doors
+- trong nhà; ở nhà
+@love-bird /'lʌvbə:d/
+*  danh từ
+- (động vật học) vẹt xanh
+@Short run 
+- (Econ) Ngắn hạn.
++ Khoảng thời gian trong quá trình sản xuất trong đó các yếu tố sản xuất cố định không thay đổi, nhưng mức độ sử dụng các yếu tố khả biến có thể bị thay đổi.
+@sora /'sɔ:rə/
+*  danh từ
+- (động vật học) gà nước xora ((cũng) sora rail)

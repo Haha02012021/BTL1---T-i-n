@@ -1,213 +1,72 @@
-@rialto 
-* danh từ
-- (Mỹ) nơi trao đổi, buôn bán
-
-@ma túy 
-* noun
-- narcotic; drug
-=nghiện ma túy+to be a drug addict
-
-@thousandth 
-* noun
-
-
-@debug 
-- (Tech) chỉnh lỗi, gỡ rối
-
-@to 
-* adj
-- big
-
-
-@Dao 
-- dân tộc Dao
--With more than 400,000 inhabitants, Dao ethnic group occupies 0.65% of the
-=Vietnamese population and belongs to Mèo-Dao linguistic group. They live+at the altitude of 700-1000m, whereas H'Mong ethnic group at the more
-=considerable altitude. Most of them inhabit Hà Giang - Tuyên Quang, and+part of them in the northwest regions. Dao ethnic group came to Vietnam six centuries ago, and remains in a nomad life
-
-
-@La mã hóa 
-- Romanize
-
-
-@PESC 
-- (Econ) Uỷ ban điều tra chi tiêu công cộng.
-+ Xem PUBLIC EXPENDITURE SURVEY COMMITTEE.
-
-
-@xem xét 
-* verb
-- to examine
-
-
-@Error correction models (ECMs) 
-- (Econ) Các mô hình hiệu chỉnh sai số; Các mô hình sửa chữa sai số.
-+ Trong phân tích và hồi quy một ECMs kết hợp các sự tác động qua lại ngắn hạn và dài hạn giữa các biến số,
-
-
-@like /laik/
+@whate'er /w t'e /
+*  tính từ & đại từ
+- (th ca) (như) whatever
+@whatever /w t'ev /
 *  tính từ
-- giống, giống nhau, như nhau, tương tự, cùng loại
-=as like as two peas+ giống nhau như hai giọt nước
-=what's he like?+ anh ta là người như thế nào? anh ta là hạng người như thế nào?
-- thực đúng, đúng như mong đợi
-=it's like a Vietnamese to thirst for learning+ hiếu học thực đúng đặc tính người Việt Nam
-=this poetry is something like+ thơ này mới thật là thơ
-- thích, sãn sàng, sãn lòng, vui lòng
-=not to feel like going out today+ cảm thấy không thích đi chơi hôm nay
-- có vẻ như
-=it looks like rain+ có vẻ như trời muốn mưa
-- gần, khoảng độ
-=something like 100d+ khoảng độ 100 đồng
-!like father like son
-- cha nào con nấy
-!like master like man
-- thầy nào tớ nấy
-*  giới từ
-- như
-=don't talk like that+ đừng nói như vậy
-=like mad+ như điên, điên cuồng
-!like a shot
-- không ngần ngại, sãn lòng; bất chấp hậu quả
-!sure like rain
-- chắc như đinh đóng cột
-*  phó từ
-- like very; like enough rất có thể
-*  liên từ
-- (thông tục) thay cho as như
-=I cannot do it like you do+ tôi không thể làm cái đó như anh làm
+- nào
+=there did not remain any doubt whatever in my mind+ trong đầu óc tôi không còn mối nghi ngờ nào nữa
+=take whatever measures you consider best+ anh cứ dùng những biện pháp nào mà anh cho là tốt nhất
+- dù thế nào, dù gì
+=whatever difficulties you may encounter+ dù anh có gặp những khó khăn gì chăng nữa
 *  danh từ
-- người thuộc loại như; vật thuộc loại như
-=did not ever see the like of it?+ có bao giờ anh trông thấy cái giống như cái đó không?
-=music, painting and the like+ âm nhạc, hội hoạ và những môn thuộc loại đó
-=the likes of me+ (thông tục) những kẻ hèn như tôi
-=the likes of you+ (thông tục) những bậc cao sang như anh
-!like cures like
-- lấy độc trị độc
-!to return like for like
-- lấy ơn trả ơn, lấy oán trả oán
-*  danh từ
-- cái thích
-=likes and dislikes+ những cái thích và những cái không thích
-*  ngoại động từ
-- thích ưa, chuộng, yêu
-=do you like fish?+ anh có thích cá không?
-=I like his cheek+(mỉa mai) tôi mới thích thái độ láo xược của hắn làm sao
-- (would like,  should like) muốn, ước mong
-=I should like a cup of tea+ tôi muốn có một tách chè
-=parents like their children to be successful in file+ bố mẹ muốn cho con cái thành công ở đời
-=I'd like to know (see)+ thử cho tôi biết (xem) nào!
-- thích hợp, hợp với (thể trạng, sức khoẻ...)
-=wine does not like me+ rượu vang không hợp với thể trạng của tôi, tôi không chịu đựng được rượu vang
-*  nội động từ
-- thích, muốn
-=you may do as you like+ anh có thể làm theo như ý thích
-
-
-
-@block /blɔk/
-*  danh từ
-- khối, tảng, súc (đá, gỗ...)
-- cái thớt, đon kê, tấm gỗ kê để chặt đầu (người bị tử hình)
-- khuôn (mũ); đầu giả (để trưng bày mũ, tóc giả...)
-- khuôn nhà lớn, nhà khối (ở giữa bốn con đường)
-- vật chương ngại; sự trở ngại; sự tắc nghẽn, sự tắc nghẽn xe cộ
-- lô đất (chính phủ cấp cho tư nhân); (từ Mỹ,nghĩa Mỹ) khoảnh đất trong thành phố
-- bản khắc (để in)
-- số lớn cổ phần
-- (ngành đường sắt) đoạn đường; đoàn toa xe
-- (kỹ thuật) puli
-- (thể dục,thể thao) sự chặn, sự cản (bóng, đối phương)
-- thông cáo phản đối một dự luật (nghị viện)
-- (úc) đường phố lớn có nhiều người đi dạo
-- (từ lóng) cái đầu (người)
-- người đần độn
-- người nhẫn tâm
-!chip of the old block
-- đứa con giống bố như tạc
-!to be senf to the block
-- bị xử chém
-*  ngoại động từ
-- làm trở ngại (sự đi lại); ngăn chận
-- làm trở ngại sự thi hành; chặn đứng (một kế hoạch)
-=to block the enemy's plant+ chặn đứng những kế hoạch của địch
-- (thể dục,thể thao) chặn cản (bóng, đối phương)
-- hạn chế chi tiêu, hạn chế việc sử dụng (vốn)
-- phản đối (dự luật ở nghị viện)
-- gò vào khuôn (mũ...)
-- rập chữ nổi (bìa sách, da
-!to block out (in)
-- phác ra, vẽ phác
-=to block out a plan+ phác ra một kế hoạch
-=to block in a pictủe+ vẽ phác một bức tranh
-
-
-
-@thương 
+- bất cứ cái gì mà; tất c cái gì mà
+=whatever you like+ tất c cái gì (mà) anh thích
+- dù thế nào, dù gì
+=keep calm, whatever happens+ dù có gì xy ra, h y cứ bình tĩnh
+@từ điển 
 * noun
-- long-handled spear
-* verb
-- to love tenderly
-
-
-@i /ai/
-*  danh từ,  số nhiều Is,  I's
-- một (chữ số La mã)
-- vật hình I
-!to dot the i's and cross the t's
-- (xem) dot
-*  đại từ
-- tôi, ta, tao, tớ
-=i said so+ tôi nói vậy
-=you know it as well as i [do]+ anh cũng biết rõ điều đó như tôi
+- dictionary
+@chuyên cần 
+* adj
+- Diligent, industrious, assiduous
+=học tập chuyên cần+to be diligent in one's learning
+=làm ăn chuyên cần+to be industrious in one's work
+@ồ hố /oho/
+- test tí xem lào
+@sad /sæd/
+*  tính từ
+- buồn rầu, buồn bã
+=to look sad+ trông buồn
+-(đùa cợt) quá tồi, không thể sửa chữa được
+- không xốp, chắc (bánh)
+- chết (màu sắc)
+=sad colours+ màu chết
+@sadden /'sædn/
+*  động từ
+- làm (ai) buồn rầu, làm (ai) buồn bã
+@saddhu 
+* danh từ
+- tu sĩ ấn độ
+@saddle /'sædl/
 *  danh từ
-- the i (triết học) cái tôi
-
-
-
-@yêu 
-* verb
-- love, to be in love with
-
-
-@lắm 
-* adv. much; many; very; a lot
-=tôi yêu cô ta lắm+I'm very love of her
-=lắm lần+many times
-
-
-@you /ju:/
-*  đại từ
-- anh, chị, ông, bà, ngài, ngươi, mày; các anh, các chị, các ông, các bà, các ngài, các người, chúng mày
-=you all know that...+ tất cả các anh đều biết rằng...
-=he spoke of you+ hắn ta nói về anh
-=if I were you+ nếu tôi là anh
-=you there what is your name?+ anh kia, tên anh là gì?
-- ai, người ta
-=you never can tell+ ai biết đâu được
-
-
-
-@u /ju:/
-*  danh từ,  số nhiều Us,  U's
-- U, u
-- vật hình U
-
-
-
-@biết 
-* verb
-- To know, to realize
-=biết mặt nhưng không biết tên+to know by sight not by name
-=không biết đường cho nên lạc+to get lost, not knowing the way
-=thức lâu mới biết đêm dài+only by staying up late, can one know that the night is long
-=biết bơi+to know how to swim
-=biết tiếng Anh+to know English
-=bảo cho biết+to bring to the knowledge of, to inform
-=dạy cho biết làm gì+to show how to do something
-=biết người biết của
-
-
+- yên ngựa, yên xe
+- đèo (giữa hai đỉnh núi)
+- vật hình yên
+!in the saddle
+- đang cưỡi ngựa; (nghĩa bóng) tại chức, đang nắm chính quyền
+!to put saddle on the right (wrong) horse
+- phê bình đúng (sai) người nào
+*  ngoại động từ
+- thắng yên (ngựa)
+- dồn việc, dồn trách nhiệm (cho ai)
+- chất gánh nặng lên (ai)
+@add /æd/
+*  động từ
+- ((thường) + up,  together) cộng
+- thêm vào, làm tăng thêm
+=add some more hot water to your tea+ cho thêm ít nước nóng nữa vào tách trà của anh
+=music added to our joy+ âm nhạc làm tăng thêm niềm vui của chúng ta
+- nói thêm
+=he added that+ anh ta nói thêm rằng
+- (+ in) kế vào, tính vào, gộp vào
+!to add fuel to the fire
+- (xem) fire
+!to add insult to injury
+- miệng chửi tay đấm
+* khác
+- (Tech) cộng; thêm vào, cộng thêm, tăng cường, bổ sung
+- cộng vào, thêm vào, bổ sung
+- a. together, a. up cộng lại lấy tổng 
 @no /nou/
 *  phó từ
 - không
@@ -223,63 +82,134 @@
 - phiếu chống; người bỏ phiếu chống
 =the noes have it+ phiếu chống chiếm đa số; đa số bỏ phiếu chống
 =the ayes and the noes+ phiếu thuận và phiếu chống
-
-
-
-@sao Kim 
-- Venus
-
-
-@à há 
-* exlc
-@Kaldor - Hicks test 
-- (Econ) Kiểm định Kaldor - Hicks.
-+ Kiểm định này được Kaldor và Hicks đưa ra trong các bài báo được in ở Tạp chí Kinh tế năm 1939. Xem COMPENSATION TESTS.
-
-
-@top 
-- đỉnh
-
-
-@DOS (Disk Operating System) 
-- (Tech) Hệ Thống Vận Hành Trên Đĩa, hệ điều hành DOS
-
-
-@a ha ha ha ha ha 
-@a ha ha ha ha 
-- tiếng cười sảng khoái
-- edited
-@Kalman filtering 
-- (Econ) Phép lọc Kalman.
-+ Đây là phương pháp tối ưu để dự đoán CÁC BIẾN SỐ NỘI SINH và cập nhật những THÔNG SỐ ƯỚC LƯỢNG trong các phương trình dự đoán.
-
-
-@tom /tɔm/
+@u /ju:/
+*  danh từ,  số nhiều Us,  U's
+- U, u
+- vật hình U
+@U- equivalence 
+- u-tương đương
+@UNIDO guidelines 
+- (Econ) Các hướng dẫn của UNIDO.
++ Một kỹ thuật thẩm định dự án ở các nước đang phát triển và là một phiên bản của phương pháp LITTLE-MIRRLEES.
+@Unbalanced economic growth 
+- (Econ) Sự tăng trưởng kinh tế không cân đối.
++ Xem BALANCED ECONOMIC DEVELOPMENT, GROWTH PATH.
+@yêu 
+* verb
+- love, to be in love with
+@meow 
+* nội động từ
+- kêu meo meo (mèo)
+* danh từ
+- meo meo (tiếng mèo kêu)
+@Nominal 
+- (Econ) Danh nghĩa.
++ Là tính từ mô tả sự đanh giá về một đại lượng kinh tế trong các mức giá hiện tại.
+@Nominal and exchange rate 
+- (Econ) Tỷ giá hối đoái danh nghĩa và thực tế.
+@Nominal and real interest rates 
+- (Econ) Lãi suất danh nghĩa và lãi suất thực tế.
+@Nominal value 
+- (Econ) Giá trị danh nghĩa.
++ Là giá trị được ghi trên một tờ chứng khoán hoặc mệnh giá của nó, trái với giá trị danh nghĩa là giá thị trường.
+@Non performings assets 
+- (Econ) Những tài sản không sinh lợi.
+@Non trade 
+- (Econ) Phi ngoại thương
+@not 
+- không
+@notably /'noutəbli/
+*  phó từ
+- đáng kể, đáng chú ý
+- đặc biệt, nhất là
+@thương 
+* noun
+- long-handled spear
+* verb
+- to love tenderly
+@door /dɔ:/
 *  danh từ
-- (viết tắt) của Thomas
-=there was nobody but tom Dick and Harry!+ chỉ toàn là những người vô giá trị!, chỉ toàn là những thằng cha căng chú kiết!
-
-
-
-@Mường 
-- dân tộc Mường
-- With about 800,000 inhabitants, Mường ethnic group occupies 1.3% of the Vietnamese population. The Mường people's residential sphere set up an arc between the Vietnamese from Vĩnh Phú to west of Hoà Bình, then to midlands of Nghệ An and Thanh Hoá. They belong to Việt-Mường linguistic group, but their culture is closer to Thái ethnic group. They live on growing rice, breeding, forging. Their residential area houses Hoà Bình Culture of the neolithic era along with which rice-growing appeared over 8,000 years BC Khua Luong ("Beating the mortar" in the Mường dialect) is a game played with wooden instruments by the Mường ethnic group, who settled in northern Vietnam in the early days of the nation's historỵThe instruments of this game consist simply of mortars and pestles, all made of wood Mortars and pestles are very familiar items of use in the life of the Mường community. They are used to husk rice before it is cooked, or to crush lean meat to make giò, bánh giày, and so on. Thus the sound of the pestle and mortar is very familiar to the Mường women. Gradually, it came to be used as a musical instrument producing familiar sounds and rhythms. Through generations, this musical instrument has known many refinements and finally was used as an instrument for a concert by both young people and the old people in the village. This musical instrument dates back many thousands of years and has been preserved to date as a precious tradition among the Mường ethnic group. It might have come into existence long before the Việt community knew how to melt copper to make bronze drums and bronze bells for musical instruments.=Nowadays, among the Mường community at Thường Xuân, Thanh Hoá+province, there exist many Khua luong teams each comprising six to eight young girls. They can play up to 12 traditional concerts reflecting the landscape and the atmosphere of the Bản Mường (Mường villages)as well as the feelings of the people there. The most typical of the concerts are those depicting "a wedding party in the village", a scene of " Welcoming Guests", of "Waiting for the Bride" and of the wedding ceremony itself. In the "Welcoming Guests" item, a merry atmosphere is created through the sounds of pestle and mortar as the people busy themselves with husking rice and making cake to entertain the guests. In the "Waiting for the Bride" concert, there reigns an atmosphere of impatient longing for the bride. In the "Wedding Party", the stately sounds help people to get rid of the noisy crowd and enter a world of quiet felicity as the bride and groom gather under the cosy roof of their new house. Besides the four main concerts, there are some others such as "Welcoming New Rice", the "Early Rains", "Hymn to the Genie of Thunder". It is hard to imagine the perfection of the sounds and music unless you attend one of the ceremonies where khua luong concerts are performed. The music leaves a deep impression on the audience and, at times, tugs at the heartstrings
-
-
-@An Nam 
-- Vietnam was named An Nam under the Chinese and French dominations
-
-
-@A ignore B gate 
-- (Tech) cổng A không biết B
-
-
-@A shares 
-- (Econ) Cổ phiếu A.(Cổ phiếu hưởng lãi sau).
-+ Xem FINANCIAL CAPITAL.
-
-
-@nine 
-- số chín (9)
-
-
+- cửa, cửa ra vào (nhà, xe ô tô...)
+=front door+ cửa trước
+=side door+ cửa bên
+- cửa ngõ, con đường
+=a door to success+ con đường thành công
+=to opera a door to peace+ mở con đường đi đến hoà bình
+!a few doors off
+- cách vài nhà, cách vài buồng
+!at death's door
+- bên ngưỡng cửa của thần chết, hấp hối, gần chết
+!to close the door upon
+- làm cho không có khả năng thực hiện được
+!to lay at someone's door
+- đổ (lỗi...) cho ai, quy (tội...) cho ai
+!to lie at the door of
+- chịu trách nhiệm, đổ lên đầu (ai...)
+=the fault lies at your door+ anh phải chịu trách nhiệm về lỗi đó, lỗi đổ lên đầu anh
+!to live next door
+- ở ngay sát vách, ở nhà bên cạnh, ở buồng bên cạnh
+!to open the door to
+- (xem) open
+!out of doors
+- ở ngoài, không ở nhà; ở ngoài trời
+=to be out of doors+ đi ra ngoài, đi chơi vắng không ở nhà
+=to play out of doors+ chơi ở ngoài trời
+!to show somebody the door
+!to show the door to somebody
+- đuổi ai ra khỏi cửa
+!to show somebody to the door
+- tiễn ai ra tận cửa
+!to shut the door in somebody's face
+- đóng sập cửa lại trước mặt ai, không thèm tiếp ai
+!to turn somebody out of doors
+- đuổi ai ra khỏi cửa
+!with closed doors
+- họp kín, xử kín
+!within doors
+- trong nhà; ở nhà
+@love /lʌv/
+*  danh từ
+- lòng yêu, tình thương
+=love of one's country+ lòng yêu nước
+=a mother's love for her children+ tình mẹ yêu con
+- tình yêu, mối tình, ái tình
+=first love+ mối tình đầu
+=never trifle with love+ không nên đùa bỡn với tình yêu
+=to be in love with+ yêu (ai)
+=to fall in love with+ đâm ra yêu (phải lòng) (ai)
+=to make love to someone+ tán tỉnh ai, tỏ tình với ai; ôm ấp hôn hít ai, ăn nằm với ai
+=to marry for love+ kết hôn vì tình
+- người yêu, người tình
+- thần ái tình
+- (thông tục) người đáng yêu; vật đáng yêu
+- (thể dục,thể thao) điểm không, không (quần vợt)
+=love all+ không không (hai bên cùng không được điểm nào)
+=love forty+ không bốn mươi
+=a love set+ một ván thua trắng (người thua không được điểm nào)
+!to love in a cottage
+- ái tình và nước lã
+!one can't get it for love or money
+- không có cách gì lấy được cái đó
+!to play for love
+- chơi vì thích không phải vì tiền
+!there is no love lost between them
+- chúng nó ghét nhau như đào đất đổ đi
+*  ngoại động từ
+- yêu, thương, yêu mến
+=to love one another+ yêu nhau, thương nhau
+- thích, ưa thích
+=to love sports+ thích thể thao
+=to love music+ thích âm nhạc
+=he loves to be praised+ nó thích được khen
+@love-begotten /'lʌvbi'gɔtn/
+*  tính từ
+- đẻ hoang
+@love-bird /'lʌvbə:d/
+*  danh từ
+- (động vật học) vẹt xanh
+@Short run 
+- (Econ) Ngắn hạn.
++ Khoảng thời gian trong quá trình sản xuất trong đó các yếu tố sản xuất cố định không thay đổi, nhưng mức độ sử dụng các yếu tố khả biến có thể bị thay đổi.
+@sora /'sɔ:rə/
+*  danh từ
+- (động vật học) gà nước xora ((cũng) sora rail)

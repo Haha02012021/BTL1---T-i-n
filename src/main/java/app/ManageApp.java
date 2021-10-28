@@ -1,9 +1,11 @@
 package app;
 
+import database.Dictionary;
 import database.Word;
 
 import java.util.ArrayList;
 import java.util.Locale;
+import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -56,9 +58,20 @@ public class ManageApp {
 
     public static String wordToString(Word word) {
         String result = "@" + word.getEnglish() + " ";
-        if (word.getPronunciation() != null) result += word.getPronunciation() + "\n";
+        if (word.getPronunciation() != null) result += cleanEnterLast(word.getPronunciation());
         else result += "\n";
-        result += (word.getMeaning());
+        result += cleanEnterLast(word.getMeaning());
         return result;
+    }
+
+    public static String cleanEnterLast(String string) {
+        Scanner scanner = new Scanner(string);
+        String res = "";
+        while(scanner.hasNextLine()) {
+            String line = scanner.nextLine();
+            if (line.length() != 0) res += (line + "\n");
+        }
+        scanner.close();
+        return res;
     }
 }

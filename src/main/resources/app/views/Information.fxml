@@ -15,7 +15,7 @@
 <?import javafx.scene.text.Text?>
 <?import javafx.scene.text.TextFlow?>
 
-<AnchorPane minHeight="600.0" minWidth="780.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane minHeight="600.0" minWidth="780.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.InfoController">
    <children>
       <HBox prefHeight="100.0" prefWidth="200.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
@@ -184,7 +184,7 @@
                         </TextFlow>
                         <TextFlow prefHeight="25.0" prefWidth="468.0" textAlignment="CENTER">
                            <children>
-                              <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Số lượng từ:">
+                              <Text fx:id="englishNumbers" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Số lượng từ:">
                                  <font>
                                     <Font size="16.0" />
                                  </font>
@@ -258,7 +258,7 @@
                         </TextFlow>
                         <TextFlow prefHeight="25.0" prefWidth="468.0" textAlignment="CENTER">
                            <children>
-                              <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Số lượng từ">
+                              <Text fx:id="vietnameseNumbers" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Số lượng từ">
                                  <font>
                                     <Font size="16.0" />
                                  </font>

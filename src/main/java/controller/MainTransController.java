@@ -1,8 +1,5 @@
 package controller;
 
-import java.io.BufferedWriter;
-import java.io.FileWriter;
-import java.io.PrintWriter;
 import java.net.URL;
 import java.net.URLConnection;
 import java.util.ArrayList;
@@ -97,7 +94,8 @@ public class MainTransController implements Initializable {
                 searchBox.getChildren().clear();
 
                 ArrayList<Word> words = ManageApp.suggestWord(dictionary.getAllWord(), t1.trim().toLowerCase(Locale.ROOT));
-                for (int i = 0; i < words.size(); i++) {
+                int size = words.size();
+                for (int i = 0; i < size; i++) {
 
                     BorderPane borderPane = new BorderPane();
 
@@ -121,16 +119,23 @@ public class MainTransController implements Initializable {
                     String shortMean = "";
                     while (sc.hasNext()) {
                         String line = sc.nextLine();
-                        if (line.charAt(0) == '*') shortMean += (line.substring(1) + ": ");
-                        else if (line.charAt(0) == '-') shortMean += (line.substring(1) + " ");
-                        else if (line.charAt(0) == '!') shortMean += (line.substring(1) + " ");
-                        else if (line.charAt(0) == '=') {
-                            Matcher m = example.matcher(line);
-                            if (m.find()) shortMean += ("ex: " + m.group(1) + " " + m.group(2) + " ");
+                        try {
+                            if (line.charAt(0) == '*') shortMean += (line.substring(1) + ": ");
+                            else if (line.charAt(0) == '-') shortMean += (line.substring(1) + " ");
+                            else if (line.charAt(0) == '!') shortMean += (line.substring(1) + " ");
+                            else if (line.charAt(0) == '=') {
+                                Matcher m = example.matcher(line);
+                                if (m.find()) shortMean += ("ex: " + m.group(1) + " " + m.group(2) + " ");
+                            }
+                            else shortMean += line;
+                        } catch (Exception e) {
+                            //TODO: handle exception
+                            System.out.println(e.getMessage());
                         }
-                        else shortMean += line;
+                        
                     }
-
+                    sc.close();
+                    
                     Label label = new Label(shortMean);
                     label.setFont(Font.font("Roboto", FontPosture.ITALIC, 13));
                     label.setPrefWidth(340);
@@ -154,9 +159,17 @@ public class MainTransController implements Initializable {
                     }));
 
                     borderPane.setOnMouseClicked(mouseEvent -> {
-                        this.setMeaningBox(string, englishWord, meaningBox, dictionary);
-                        for (int j = 0; j < words.size(); j++) {
-                            searchBox.getChildren().get(j).setStyle("-fx-background-color: #F2F3F4; -fx-border-color: transparent transparent #cccccc transparent; -fx-border-width: 2px;");
+                        try {
+                            this.setMeaningBox(string, englishWord, meaningBox, dictionary);
+                        } catch (Exception e) {
+                            System.out.println(e.getMessage());
+                        }
+                        for (int j = 0; j < size; j++) {
+                            try {
+                                searchBox.getChildren().get(j).setStyle("-fx-background-color: #F2F3F4; -fx-border-color: transparent transparent #cccccc transparent; -fx-border-width: 2px;");
+                            } catch (Exception e) {
+                                System.out.println(e.getMessage());
+                            }
                         }
                         borderPane.setStyle("-fx-background-color: #99ccff; -fx-border-color: transparent transparent #cccccc transparent; -fx-border-width: 2px;");
                     });
@@ -241,6 +254,8 @@ public class MainTransController implements Initializable {
                     editedWord.addMeaning(line); //lúc này word là từ cuối cùng trong dict. Method addMeaning sẽ thêm dòng vào thuộc tính meaning
                 }
             }
+
+            scanner.close();
             dictionary.setAWord(indexWord, editedWord);
             ArrayList<Word> words = dictionary.getAllWord();
 
@@ -370,7 +385,6 @@ public class MainTransController implements Initializable {
                 URLConnection connection = speakURL.openConnection();
                 connection.connect();
             } catch (Exception e) {
-                //TODO: handle exception
                 Alert savedAlert = new Alert(Alert.AlertType.ERROR);
                 savedAlert.setTitle("Confirmation");
                 savedAlert.setHeaderText("OH NO!");
@@ -402,7 +416,18 @@ public class MainTransController implements Initializable {
         if(resultWord != null) {
             labelEng.setText(resultWord.getEnglish());
             vbox.setWord(resultWord);
-            scrollPane.setContent(vbox.meaningVBox());
+            try {
+                scrollPane.setContent(vbox.meaningVBox());
+            } catch (Exception e) {
+                System.out.println(e.getMessage());
+            }
+
+            Word bmWord = ManageApp.findBHWord(bookmarkDict.getAllWord(), resultWord.getEnglish());
+            if (bmWord != null) {
+                bookmarkIcon.setImage(new Image(getClass().getResourceAsStream("bookmark.png")));
+            } else {
+                bookmarkIcon.setImage(new Image(getClass().getResourceAsStream("bookmark-before.png")));
+            }
 
             Dictionary d = new Dictionary("history");
             ArrayList<Word> words = d.getAllWord();

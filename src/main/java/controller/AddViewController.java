@@ -5,10 +5,13 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Optional;
 import java.util.ResourceBundle;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 import app.ManageApp;
 import database.Dictionary;
 import database.Word;
+import javafx.css.Match;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Alert;
@@ -47,6 +50,9 @@ public class AddViewController implements Initializable{
         String newPronun = typePronun.getText();
         String nameFile = "";
 
+        Pattern pattern = Pattern.compile("/[^/]+/");
+        Matcher m = pattern.matcher(newPronun);
+
         try {
             if(selectBox.getValue().equals(language[0])) {
                 nameFile = "English";
@@ -70,7 +76,33 @@ public class AddViewController implements Initializable{
                 ArrayList<Word> dict = dictionary.getAllWord();
                 int index = ManageApp.findWord(dict, newWord.toLowerCase().trim());
                 Word word = new Word(newWord, newPronun, newMeaning, false);
+                if (!newPronun.equals("") && !m.find()) {
+                    Alert confimAlert1 = new Alert(Alert.AlertType.CONFIRMATION);
+                    confimAlert1.setTitle("BÁO");
+                    confimAlert1.setHeaderText("BÁOOO");
+                    confimAlert1.setContentText("Định dạng phát âm không đúng? Bạn có muốn tự động tạo định dạng /từ/ không? Bấm YES để đồng ý. Chọn NO, phát âm mới của bạn sẽ bị xóa!");
+        
+                    ButtonType buttonTypeYES = new ButtonType("YES", ButtonBar.ButtonData.YES);
+                    ButtonType buttonTypeNO = new ButtonType("NO", ButtonBar.ButtonData.NO);
+        
+                    confimAlert1.getButtonTypes().setAll(buttonTypeYES, buttonTypeNO);
+    
+                    Optional<ButtonType> result = confimAlert1.showAndWait();
+                
+                    confimAlert1.show();
+    
+                    if(result.get() == buttonTypeYES) {
+                        typePronun.setText("/" + newPronun + "/");
+                        newPronun = "/" + newPronun + "/";
+                        confimAlert1.close();
+                    } else if (result.get() == buttonTypeNO) {
+                        newPronun = "";
+                        confimAlert1.close();
+                    }
+                }
+
                 if (index == -1) {
+                    word.setPronunciation(newPronun);
                     dict.add(word);
                     Collections.sort(dict);
         
@@ -90,10 +122,11 @@ public class AddViewController implements Initializable{
                     confimAlert.show();
 
                     if(result.get() == buttonTypeYES) {
+                        word.setPronunciation(newPronun);
                         dict.set(index, word);
                         confimAlert.close();
-                    } else {
-                        dict.set(index, new Word(newWord, dictionary.getWord(index).getPronunciation(), dictionary.getWord(index).getMeaning() + newMeaning, false));
+                    } else if (result.get() == buttonTypeNO) {
+                        dict.set(index, new Word(newWord, dictionary.getWord(index).getPronunciation().replace("\n", "") + "\n" + newPronun.replace("\n", "") + "\n", dictionary.getWord(index).getMeaning() + newMeaning + "\n", false));
                         confimAlert.close();
                     }
                 }

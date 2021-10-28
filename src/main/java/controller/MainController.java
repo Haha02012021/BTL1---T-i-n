@@ -2,6 +2,7 @@ package controller;
 
 import database.Dictionary;
 import database.Word;
+import javafx.animation.FadeTransition;
 import javafx.beans.value.ChangeListener;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -12,7 +13,14 @@ import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.Pane;
 import javafx.scene.layout.Priority;
+import javafx.scene.layout.StackPane;
 import javafx.scene.layout.VBox;
+import javafx.scene.paint.Color;
+import javafx.scene.text.Font;
+import javafx.scene.text.FontPosture;
+import javafx.scene.text.FontWeight;
+import javafx.scene.text.TextAlignment;
+import javafx.util.Duration;
 import app.Main;
 
 import java.net.URL;
@@ -38,10 +46,9 @@ public class MainController implements Initializable{
     @FXML
     private Pane infoPane;
 
-
     static Word meanedWord;
-    private String styleFocusHoverButton = "-fx-background-color:  #0A72C2; -fx-background-radius: 5; -fx-border-color:  #084E91; -fx-border-radius: 5;-fx-background-insets: -5;";
-    private String styleNormalButton = "-fx-background-color:  #0A72C2; -fx-background-radius: 5;";
+    private String styleFocusHoverButton = "-fx-background-color:  #0A72C2; -fx-background-radius: 5; -fx-border-color:  #084E91; -fx-border-radius: 5;-fx-background-insets: -5";
+    private String styleNormalButton = "-fx-background-color:  #0A72C2; -fx-background-radius: 5";
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
@@ -66,6 +73,7 @@ public class MainController implements Initializable{
     }
 
     public void engVietButton(MouseEvent mouseEvent) {
+
         engVietPane.setStyle(styleFocusHoverButton);
         vietEngPane.setStyle(styleNormalButton);
         historyPane.setStyle(styleNormalButton);
@@ -73,16 +81,45 @@ public class MainController implements Initializable{
         morePane.setStyle(styleNormalButton);
         addPane.setStyle(styleNormalButton);
         infoPane.setStyle(styleNormalButton);
-        MainTransController.setDictionary(new Dictionary("English"));
-        try {
-            FXMLLoader mainTransFxmlLoader = new FXMLLoader(Main.class.getResource("views/MainTrans.fxml"));
-            Parent mainTransParent = mainTransFxmlLoader.load();
-            allViewBox.getChildren().remove(1);
-            allViewBox.getChildren().add(mainTransParent);
-            allViewBox.setHgrow(allViewBox.getChildren().get(1), Priority.ALWAYS);
-        } catch (Exception exception) {
-            System.out.println(exception.getMessage());
-        }
+
+        Label label = new Label("Đang tải...\nXin vui lòng chờ một lát...");
+        label.setFont(Font.font("Roboto", FontWeight.BOLD, FontPosture.ITALIC, 16));
+        label.setTextAlignment(TextAlignment.CENTER);
+        label.setTextFill(Color.web("#084E91"));
+
+        StackPane stackPane = new StackPane(label);
+
+        allViewBox.getChildren().remove(1);
+        allViewBox.getChildren().add(stackPane);
+        allViewBox.setHgrow(allViewBox.getChildren().get(1), Priority.ALWAYS);
+
+        FadeTransition fadeIn = new FadeTransition(Duration.seconds(1), stackPane);
+        fadeIn.setFromValue(0);
+        fadeIn.setToValue(1);
+        fadeIn.setCycleCount(1);
+        fadeIn.play();
+
+        FadeTransition fadeOut = new FadeTransition(Duration.seconds(1), stackPane);
+        fadeOut.setFromValue(1);
+        fadeOut.setToValue(0);
+        fadeOut.setCycleCount(1);
+
+        fadeIn.setOnFinished(e -> {
+            MainTransController.setDictionary(new Dictionary("English"));
+            fadeOut.play();
+        });
+
+        fadeOut.setOnFinished(e -> {
+            try {
+                FXMLLoader mainTransFxmlLoader = new FXMLLoader(Main.class.getResource("views/MainTrans.fxml"));
+                Parent mainTransParent = mainTransFxmlLoader.load();
+                allViewBox.getChildren().remove(1);
+                allViewBox.getChildren().add(mainTransParent);
+                allViewBox.setHgrow(allViewBox.getChildren().get(1), Priority.ALWAYS);
+            } catch (Exception exception) {
+                System.out.println(exception.getMessage());
+            }
+        });        
     }
 
     public void vietEngButton(MouseEvent mouseEvent) {
@@ -161,10 +198,6 @@ public class MainController implements Initializable{
         } catch (Exception exception) {
             System.out.println(exception.getMessage());
         }
-    }
-
-    public void colorButton(MouseEvent event) {
-        
     }
 
     public void addButton(MouseEvent event) {
