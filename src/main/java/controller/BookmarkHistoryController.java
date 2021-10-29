@@ -32,6 +32,7 @@ import javafx.scene.control.OverrunStyle;
 import javafx.scene.control.ScrollPane;
 import javafx.scene.control.TextField;
 import javafx.scene.control.ButtonBar;
+import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
@@ -70,6 +71,7 @@ public class BookmarkHistoryController implements Initializable {
     private ImageView bookmarkIcon;
 
     static Dictionary dictionary = new Dictionary("bookmark");
+    static Dictionary bookmarkDict = new Dictionary("bookmark");
     private Word wordOfClass = null;
 
     public static void setDictionary(Dictionary dict) {
@@ -162,6 +164,26 @@ public class BookmarkHistoryController implements Initializable {
 
             searchBox.getChildren().add(borderPane);
         }
+    
+        bookmarkIcon.setOnMouseClicked(e -> {
+            ArrayList<Word> bmDict = bookmarkDict.getAllWord();
+            String newBm = "bookmark.png";
+            boolean checkBookmark = false;
+
+            for (int i = 0; i < bmDict.size(); i++) {
+                if (bmDict.get(i).getEnglish().equals(wordOfClass.getEnglish())) {
+                    bmDict.remove(i);
+                    newBm = "bookmark-before.png";
+                    checkBookmark = true;
+                    break;
+                }
+            }
+
+            if (!checkBookmark) bmDict.add(wordOfClass);
+            bookmarkIcon.setImage(new Image(getClass().getResourceAsStream(newBm)));
+
+            bookmarkDict.writeToDictionary(bmDict);
+        });
     }
 
     public static ArrayList<String> separateMeaning(String s) {
@@ -217,6 +239,13 @@ public class BookmarkHistoryController implements Initializable {
             labelEng.setText(resultWord.getEnglish());
             vbox.setWord(resultWord);
             scrollPane.setContent(vbox.meaningVBox());
+
+            Word bmWord = ManageApp.findBHWord(bookmarkDict.getAllWord(), resultWord.getEnglish());
+            if (bmWord != null) {
+                bookmarkIcon.setImage(new Image(getClass().getResourceAsStream("bookmark.png")));
+            } else {
+                bookmarkIcon.setImage(new Image(getClass().getResourceAsStream("bookmark-before.png")));
+            }
         }
         else  {
             labelEng.setText("Ôi!");

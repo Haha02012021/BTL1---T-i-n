@@ -172,18 +172,6 @@
                      <children>
                         <TextFlow prefHeight="25.0" prefWidth="468.0" textAlignment="CENTER">
                            <children>
-                              <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Nguồn: ">
-                                 <font>
-                                    <Font size="16.0" />
-                                 </font>
-                              </Text>
-                           </children>
-                           <VBox.margin>
-                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-                           </VBox.margin>
-                        </TextFlow>
-                        <TextFlow prefHeight="25.0" prefWidth="468.0" textAlignment="CENTER">
-                           <children>
                               <Text fx:id="englishNumbers" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Số lượng từ:">
                                  <font>
                                     <Font size="16.0" />
@@ -244,18 +232,6 @@
                   </ImageView>
                   <VBox alignment="CENTER" maxHeight="100.0" minWidth="300.0" prefHeight="100.0" prefWidth="300.0" style="-fx-background-color: #084E91; -fx-background-radius: 40;" HBox.hgrow="ALWAYS">
                      <children>
-                        <TextFlow prefHeight="25.0" prefWidth="468.0" textAlignment="CENTER">
-                           <children>
-                              <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Nguồn:">
-                                 <font>
-                                    <Font size="16.0" />
-                                 </font>
-                              </Text>
-                           </children>
-                           <VBox.margin>
-                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-                           </VBox.margin>
-                        </TextFlow>
                         <TextFlow prefHeight="25.0" prefWidth="468.0" textAlignment="CENTER">
                            <children>
                               <Text fx:id="vietnameseNumbers" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Số lượng từ">

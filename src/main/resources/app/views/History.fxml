@@ -73,8 +73,13 @@
                                     <Image url="@../image/history.png" />
                                  </image>
                                  <HBox.margin>
-                                    <Insets />
+                                    <Insets right="5.0" />
                                  </HBox.margin>
+                              </ImageView>
+                              <ImageView fx:id="bookmarkIcon" fitHeight="30.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../image/bookmark-before.png" />
+                                 </image>
                               </ImageView>
                            </children>
                         </HBox>

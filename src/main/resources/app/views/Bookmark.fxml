@@ -68,7 +68,7 @@
                      <children>
                         <HBox prefHeight="21.0">
                            <children>
-                              <ImageView fitHeight="30.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                              <ImageView fx:id="bookmarkIcon" fitHeight="30.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
                                     <Image url="@../image/bookmark.png" />
                                  </image>

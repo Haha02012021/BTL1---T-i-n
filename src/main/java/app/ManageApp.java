@@ -56,6 +56,7 @@ public class ManageApp {
             if (matcher2.find()) {
                 if (otherWordArr.size() < 20) otherWordArr.add(w);
             }
+
         }
 
         if (wordArr.size() == 0 && otherWordArr.size() != 0) return otherWordArr;
